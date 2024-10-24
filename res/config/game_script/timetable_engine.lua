@@ -11,31 +11,6 @@ local state = nil
 
 local timetableChanged = false
 
-local UIStrings = {
-		arr	= _("arr_i18n"),
-		arrival	= _("arrival_i18n"),
-		dep	= _("dep_i18n"),
-		departure = _("departure_i18n"),
-		unbunch_time = _("unbunch_time_i18n"),
-		unbunch	= _("unbunch_i18n"),
-		auto_unbunch = _("auto_unbunch_i18n"),
-		timetable = _("timetable_i18n"),
-		timetables = _("timetables_i18n"),
-		line = _("line_i18n"),
-		lines = _("lines_i18n"),
-		min	= _("time_min_i18n"),
-		sec	= _("time_sec_i18n"),
-		stations = _("stations_i18n"),
-		frequency = _("frequency_i18n"),
-		journey_time = _("journey_time_i18n"),
-		arr_dep	= _("arr_dep_i18n"),
-		no_timetable = _("no_timetable_i18n"),
-		all	= _("all_i18n"),
-		add	= _("add_i18n"),
-		none = _("none_i18n"),
-		tooltip	= _("tooltip_i18n")
-}
-
 -------------------------------------------------------------
 --------------------- OTHER ---------------------------------
 -------------------------------------------------------------

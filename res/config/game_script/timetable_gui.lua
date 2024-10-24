@@ -90,7 +90,7 @@ function timetableGUI.stFillStations()
 	-- list all stations that are part of a timetable 
 	timetable.cleanTimetable() -- remove old lines no longer in the game
 	--timetableChanged = true
-	timetableChanged = false
+	--timetableChanged = false
 
 	menu.stStations:deleteAll()
 	local stationNameOrder = {} -- used to sort the lines by name
