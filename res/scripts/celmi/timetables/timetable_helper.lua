@@ -199,6 +199,19 @@ function timetableHelper.isLineOfType(lineType)
 end
 
 ---@param line  number | string
+-- returns String
+-- If no line type is set, this assumes it is a road vehicle line.
+function timetableHelper.getLineType(line)
+	local lineTypes = {"RAIL", "ROAD", "TRAM", "WATER", "AIR"}
+	for _,currentLineType in pairs(lineTypes) do
+		if timetableHelper.lineHasType(line, currentLineType) then
+			return string.lower(currentLineType)
+		end
+	end
+	return "road"
+end
+
+---@param line  number | string
 ---@param lineType string, eg "RAIL", "ROAD", "TRAM", "WATER", "AIR"
 -- returns Bool
 function timetableHelper.lineHasType(line, lineType)
